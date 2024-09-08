@@ -1,0 +1,112 @@
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+a:link{
+    color: hsla(0, 83%, 55%, 0.692);
+}
+a:hover{
+    color: hsla(120, 82%, 40%, 0.849);
+    font-size: 1.1em;
+
+}
+a:active{
+    color: hsla(120, 48%, 62%, 0.856);
+    font-size: 1.1em;
+}
+
+
+
+h1::first-letter{
+    font-size: 2em;
+    font-style: oblique;
+}
+
+p::first-line{
+    background-color: hsl(350, 76%, 69%);
+
+}
+p::selection{
+    color: hsl(86, 50%, 56%);
+    background-color:hsl(0, 1%, 42%);
+    
+}
+#fruit li::before{
+    content: "✔";
+}
+#apple::after{
+    content: "🍏";
+}
+#orange::after{
+    content: "🍊";
+}
+#banana::after{
+    content: "🍌";
+}
+#fruit li::marker{
+    content: "✔";
+    color: rgb(36, 221, 91);
+    font-size: 1.2em;
+}
+
+
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: hsl(120, 56%, 52%);
+    font-weight: bold;
+    border-radius: 6px;
+}
+.pagination a:hover:not(.active){
+    background-color: hsl(120, 2%, 65%);
+    border-radius: 6px;
+}
+---- 
+
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    position: absolute;
+    background-color:hwb(0 80% 20% / 0.945);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0.8%);
+
+}
+.dropdown:hover .content{
+   display: block; 
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 71%);
+}
+,.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
